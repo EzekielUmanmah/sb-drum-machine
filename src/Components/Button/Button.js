@@ -51,6 +51,8 @@ Button.propTypes = {
   /** The id of the clip */
   index: PropTypes.number.isRequired,
   onClick: PropTypes.func,
+  /** Set true for Power Button */
+  power: PropTypes.bool,
 };
 
 Button.defaultProps = {
@@ -59,4 +61,5 @@ Button.defaultProps = {
   id: 'Test',
   key: 'Test',
   onClick: undefined,
+  power: false,
 };

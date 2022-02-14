@@ -12,7 +12,11 @@ const Template = (args) => <Button {...args} />;
 
 export const DrumButton = Template.bind({});
 DrumButton.args = {
-  primary: true,
+  // isPower: false,
 };
 
 export const PowerButton = Template.bind({});
+PowerButton.args = {
+  // isPower: true,
+  power: true,
+};
