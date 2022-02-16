@@ -32,9 +32,7 @@ const StyledButton = styled.button`
 /**
  * The Button Format
  */
-
 export const Button = ({ isDisabled, id, key, index, ...props }) => {
-  // console.log('props: ', props);
   return (
     <StyledButton disabled={isDisabled} id={id} key={key} index={index} {...props}>
       {id}
@@ -44,11 +42,11 @@ export const Button = ({ isDisabled, id, key, index, ...props }) => {
 
 Button.propTypes = {
   isDisabled: PropTypes.bool,
-  /** The id of the clip */
+  /** The ID of the clip */
   id: PropTypes.string.isRequired,
-  /** The id of the clip */
+  /** The ID of the clip */
   key: PropTypes.string.isRequired,
-  /** The id of the clip */
+  /** The index of the clip */
   index: PropTypes.number.isRequired,
   onClick: PropTypes.func,
   /** Set true for Power Button */
